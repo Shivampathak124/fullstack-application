@@ -23,32 +23,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// router.post("/add-to-cart", async (req, res) => {
-//   const { productId, quantity, userId } = req.body;
 
-//   if (!productId || !quantity || !userId) {
-//     return res
-//       .status(400)
-//       .json({ message: "Product ID, quantity, and user ID are required" });
-//   }
-
-//   try {
-//     const product = await Product.findById(productId);
-//     if (!product) {
-//       return res.status(404).json({ message: "Product not found" });
-//     }
-
-//     if (product.stock < quantity) {
-//       return res.status(400).json({ message: "Not enough stock available" });
-//     }
-
-   
-
-//     res.status(200).json({ message: "Product added to cart successfully" });
-//   } catch (err) {
-//     res.status(500).json({ message: "Server error" });
-//   }
-// });
 
 // POST: Create a new product
 router.post("/", async (req, res) => {

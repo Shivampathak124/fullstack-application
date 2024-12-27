@@ -21,7 +21,7 @@ app.use(cors());
 app.use("/api/auth", authRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
-app.use("/api/products", productRoutes); // Ensure this is the correct route
+app.use("/api/products", productRoutes); 
 
 // Connect to MongoDB
 mongoose
